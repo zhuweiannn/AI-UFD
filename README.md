@@ -16,7 +16,6 @@ To use the code provided in this repository, please ensure that R is installed. 
 - `cowplot`
 
 The required packages can be installed by running:
-```bash
 Rscript code/01_install_packages.R
 
 ## Usage

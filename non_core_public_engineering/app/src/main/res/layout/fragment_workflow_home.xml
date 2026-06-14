@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_shell_gradient"
+    android:fillViewport="true"
+    tools:context=".ui.workflow.WorkflowHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/workflow_title"
+            android:textColor="@color/shell_text_primary"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/workflow_subtitle"
+            android:textColor="@color/shell_text_secondary"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:id="@+id/cardVideoAssistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_shell_card"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_video_24"
+                android:tint="@color/shell_accent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/workflow_video_title"
+                android:textColor="@color/shell_text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/workflow_video_desc"
+                android:textColor="@color/shell_text_secondary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/groupVideoAssistantSessionSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textVideoAssistantProcessingStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/shell_text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    tools:text="后台处理中" />
+
+                <ProgressBar
+                    android:id="@+id/progressVideoAssistantSession"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="10dp"
+                    android:max="1000"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/bg_shell_progress" />
+
+                <TextView
+                    android:id="@+id/textVideoAssistantProcessingDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/shell_text_secondary"
+                    android:textSize="13sp"
+                    tools:text="45% · 1432/5848" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonOpenVideoAssistant"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_video_assistant_button_primary"
+                android:text="@string/open_video_assistant"
+                android:textAllCaps="false"
+                android:textColor="@color/shell_text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardCameraCapture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/bg_shell_card"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/ic_menu_camera"
+                android:tint="@color/shell_accent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="@string/workflow_camera_title"
+                android:textColor="@color/shell_text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/workflow_camera_desc"
+                android:textColor="@color/shell_text_secondary"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonOpenCameraCapture"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_shell_button_secondary"
+                android:text="@string/open_camera_capture"
+                android:textAllCaps="false"
+                android:textColor="@color/shell_text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

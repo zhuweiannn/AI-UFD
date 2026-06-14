@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:gravity="center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <!-- 新增：手动触发按钮（左侧） -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnFlush"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="手动触发"
+        android:padding="6dp"
+        android:tint="#FFFFFFFF"
+        android:tooltipText="手动触发一次计算"
+        android:src="@drawable/ic_refresh_24" />
+
+    <!-- 新增：手动截图快照 -->
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnSnapshot"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="6dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="截图"
+        android:padding="6dp"
+        android:tint="#FFFFFFFF"
+        android:tooltipText="截图快照"
+        android:src="@drawable/ic_snapshot_24" />
+
+<!--    <TextView-->
+<!--        android:text="内网"-->
+<!--        android:textSize="14sp"-->
+<!--        android:textColor="#FFFFFFFF"-->
+<!--        android:layout_marginEnd="6dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchEnv"
+        android:checked="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

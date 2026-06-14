@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_shell_card"
+    android:orientation="vertical"
+    android:paddingStart="20dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="20dp">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_video_24"
+        android:tint="@color/shell_accent" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/unfinished_conflict_title"
+        android:textColor="@color/shell_text_primary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textConflictMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/shell_text_secondary"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/buttonReturnToUnfinished"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_video_assistant_button_primary"
+        android:text="@string/unfinished_conflict_return"
+        android:textAllCaps="false"
+        android:textColor="@color/shell_text_primary" />
+
+    <Button
+        android:id="@+id/buttonDeleteAndStartCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_video_assistant_button_warning"
+        android:text="@string/unfinished_conflict_delete_and_start"
+        android:textAllCaps="false"
+        android:textColor="@color/shell_text_primary" />
+
+    <Button
+        android:id="@+id/buttonCancelConflict"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_shell_button_secondary"
+        android:text="@string/unfinished_conflict_cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/shell_text_primary" />
+</LinearLayout>

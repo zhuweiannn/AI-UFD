@@ -1,0 +1,11 @@
+[
+  {
+    "id": "Weian Zhu",
+    "display_name": "Weian Zhu",
+    "asset_basename": "Weian Zhu",
+    "target_size": 640,
+    "compute_model": "Weian Zhu",
+    "default": true,
+    "task": "segment"
+  }
+]

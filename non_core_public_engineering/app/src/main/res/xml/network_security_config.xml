@@ -1,0 +1,15 @@
+<network-security-config>
+    <!-- base-config 对 IP 也生效（domain-config 不能匹配纯 IP），所以用 base-config -->
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system"/>
+            <certificates src="user"/>
+        </trust-anchors>
+    </base-config>
+    <!-- （可选）调试时信任用户证书，方便抓包或自签证书联调 -->
+    <debug-overrides>
+        <trust-anchors>
+            <certificates src="user"/>
+        </trust-anchors>
+    </debug-overrides>
+</network-security-config>

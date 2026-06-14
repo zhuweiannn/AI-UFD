@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_workflow_home">
+
+    <fragment
+        android:id="@+id/nav_workflow_home"
+        android:name="com.example.liquid_detect.ui.workflow.WorkflowHomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_workflow_home">
+        <action
+            android:id="@+id/action_nav_workflow_home_to_nav_video_assistant"
+            app:destination="@id/nav_video_assistant"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_left"
+            app:popExitAnim="@anim/nav_slide_out_right" />
+        <action
+            android:id="@+id/action_nav_workflow_home_to_nav_camera_capture"
+            app:destination="@id/nav_camera_capture"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_left"
+            app:popExitAnim="@anim/nav_slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_video_assistant"
+        android:name="com.example.liquid_detect.feature.videoassistant.VideoAssistantFragment"
+        android:label="@string/menu_video_assistant"
+        tools:layout="@layout/fragment_video_assistant" />
+
+    <fragment
+        android:id="@+id/nav_camera_capture"
+        android:name="com.example.liquid_detect.feature.camera.CameraCaptureFragment"
+        android:label="@string/menu_camera_capture"
+        tools:layout="@layout/fragment_capture">
+        <action
+            android:id="@+id/action_nav_camera_capture_to_nav_video_assistant"
+            app:destination="@id/nav_video_assistant"
+            app:enterAnim="@anim/nav_slide_in_right"
+            app:exitAnim="@anim/nav_slide_out_left"
+            app:popEnterAnim="@anim/nav_slide_in_left"
+            app:popExitAnim="@anim/nav_slide_out_right" />
+    </fragment>
+</navigation>

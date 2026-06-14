@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Liquiddetect" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/shell_bg_secondary</item>
+        <item name="colorPrimaryVariant">@color/shell_bg</item>
+        <item name="colorOnPrimary">@color/shell_text_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/shell_accent</item>
+        <item name="colorSecondaryVariant">@color/shell_accent_soft</item>
+        <item name="colorOnSecondary">@color/shell_bg</item>
+        <item name="colorSurface">@color/shell_card</item>
+        <item name="colorOnSurface">@color/shell_text_primary</item>
+        <item name="android:windowBackground">@color/shell_bg</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Liquiddetect.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Liquiddetect.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Liquiddetect.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

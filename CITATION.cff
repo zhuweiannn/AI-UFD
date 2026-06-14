@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+message: "If you use these manuscript-associated public code and reproducibility materials, please cite the associated manuscript and this repository."
+title: "AI-UFD: manuscript-associated public code and reproducibility materials"
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Weian
+  - family-names: Li
+    given-names: Maoyin
+  - family-names: Yan
+    given-names: Xiaomei
+  - family-names: Wang
+    given-names: Senfu
+  - family-names: Lin
+    given-names: Wenjun
+  - family-names: Wen
+    given-names: Haidong
+  - family-names: Wu
+    given-names: Jiagen
+  - family-names: Liu
+    given-names: Hui
+  - family-names: He
+    given-names: Wenli
+  - family-names: Su
+    given-names: Kaibin
+  - family-names: Zhang
+    given-names: Fan
+  - family-names: Yang
+    given-names: Jun
+  - family-names: Tong
+    given-names: Peng
+  - family-names: Cai
+    given-names: Youdi
+  - family-names: Luo
+    given-names: Yun
+  - family-names: Zhang
+    given-names: Xu
+  - family-names: Wang
+    given-names: Yu
+repository-code: "https://github.com/zhuweiannn/AI-UFD"
+license: "MIT"
+version: "0.1.0-manuscript-public"
+date-released: "2026-06-14"
+abstract: "AI-UFD repository"
+keywords:
+  - uroflowmetry
+  - digital medicine
+  - medical AI
+  - research software
+  - statistical analysis
+  - reproducibility
